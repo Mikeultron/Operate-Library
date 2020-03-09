@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -203,10 +203,46 @@ namespace Operate
                 string[] string2 = str2.Split(' ');
                 var m = string1.Distinct();
                 var n = string2.Distinct();
-                var results = m.Intersect(n, StringComparer.OrdinalIgnoreCase);                
+                var results = m.Intersect(n, StringComparer.OrdinalIgnoreCase);
                 var test = "";
-                foreach(var k in results) test += k + " ";
+                foreach(var k in results) 
+                    test += k + " ";
                 return test;
+            }
+            /**
+                * Count the occurences of a specified string in a string.
+                *
+                * Returns the total of the occurences.
+                */
+            public static int Occurences(this string str, string key)
+            {
+                string[] arr = str.Split(new[] {' ', '?', '.', ',', '!', ';'}, StringSplitOptions.RemoveEmptyEntries);
+                Dictionary<int, string> d = new Dictionary<int, string>();
+
+                for(int i = 0; i < arr.Length; i++)                
+                    d.Add(i, arr[i]);                
+                return d.Where(x => x.Value == key).ToList().Count();
+            }
+            /**
+                * Count the number of words in a string.
+                *
+                * Returns the total number of words in the string.
+                *
+                * ex : "hello my name is Operate";
+                * Output : 5
+                */
+            public static int WordCount(this string str)
+            {                
+                int wrd,l;
+                l = 0;
+                wrd = 1;
+                while (l <= str.Length - 1)
+                {
+                    if(str[l]==' ' || str[l]=='\n' || str[l]=='\t')
+                        wrd++;
+                    l++;
+                }
+                return wrd;
             }
         }
     }
