@@ -4,6 +4,47 @@ using System.Collections.Generic;
 
 namespace Operate
 {
+    public static class Statistic
+    {
+        /**
+            * Count the average data from he given data
+            *
+            * Returns average value.
+            */
+        public static double Average(double[] data)
+        {
+            if(data == null || data.Length == 0)
+                return 0;
+            double sum = 0;
+            for(int i = 0; i < data.Length; i++)            
+                sum = sum + data[i];            
+            return Math.Round(sum / data.Length, 2);
+        }
+        /**
+            * Get the median of the given data.
+            * 
+            * Returns median value.
+            */
+        public static double Median(double[] data)
+        {
+            double[] sortedData = (double[])data.Clone();
+            Array.Sort(sortedData);
+            int size = sortedData.Length;            
+            int mid = size / 2;
+            double median = (size % 2 != 0) ? (double)sortedData[mid] : ((double)sortedData[mid] + (double)sortedData[mid - 1]) / 2;
+            return median;
+        }
+        /**
+            * Search the mode of the given data.
+            *
+            * Return the highest frequency number.
+            */
+        public static double Mode(double[] data)
+        {
+            var mode = data.GroupBy(n => n).OrderByDescending(g => g.Count()).Select(g => g.Key).FirstOrDefault();
+            return mode;
+        }
+    }
     public static class Count
     {        
         /**
