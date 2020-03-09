@@ -4,20 +4,25 @@ using Operate;
 using Operate.StringHelper;
 using static Operate.Count;
 using static Operate.StringHelper.Strings;
+using static Operate.Statistic;
 
 namespace Program
 {
     class Program
     {
         static void Main()
-        {            
-            // Some Variables to test
+        {
+            // Testing the Statistic class functions
+            double[] data = {7.5, 8, 7, 6.5, 7, 7, 6.5, 8, 7.5, 8, 7, 7};
+            Console.WriteLine(Average(data));
+            Console.WriteLine(Median(data));
+            Console.WriteLine(Mode(data));
+            
+            // Testing the Count class functions
             int a = 10;
             int b = 5;
             int[] point1 = {3, 3};
             int[] point2 = {0, 0};
-            
-            // Testing the Count classes functions
             Console.WriteLine("Count class\n");
             Console.WriteLine(a.IsGreater(b));
             Console.WriteLine(b.IsLess(a));
