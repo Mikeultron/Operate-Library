@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Linq;
 using Operate;
 using Operate.StringHelper;
 using static Operate.Count;
@@ -9,7 +10,7 @@ namespace Program
     class Program
     {
         static void Main()
-        {
+        {            
             // Some Variables to test
             int a = 10;
             int b = 5;
@@ -34,12 +35,15 @@ namespace Program
             string addString = str.AddString(" World!");
             string str1 = "1 9 2 3";
             string str2 = "1 2 5 9";
+            string longStr = "i have a car and my car is black because i love black and i love my car.";
             Console.WriteLine(addString);
             Console.WriteLine(addString.Reverse());
             Console.WriteLine(ReverseWord(addString));
             Console.WriteLine();
             Console.WriteLine(Intersection(new string[] {"1, 2, 3, 4", "1, 9, 3, 7"}));
             Console.WriteLine(Intersection(str1, str2));
+            Console.WriteLine(longStr.Occurences("car"));
+            Console.WriteLine(longStr.WordCount());
         }
     }
 }
