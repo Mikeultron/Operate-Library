@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "cnsr/1.0.0": {
+        "dependencies": {
+          "libs": "1.0.0"
+        },
+        "runtime": {
+          "cnsr.dll": {}
+        }
+      },
+      "libs/1.0.0": {
+        "runtime": {
+          "libs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "cnsr/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "libs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
