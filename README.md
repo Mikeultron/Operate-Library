@@ -13,5 +13,6 @@ Anyone can donate some code to improve this library.
 - using Operate.StringHelper;
 - using static Operate.Count;
 - using static Operate.StringHelper.Strings;
+- using static Operate.Statistic;
 
 *Mikeul 2020*
