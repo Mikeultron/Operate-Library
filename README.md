@@ -13,3 +13,5 @@ List of possible namespaces :
 - using Operate.StringHelper;
 - using static Operate.Count;
 - using static Operate.StringHelper.Strings;
+
+Mikeul 2020
