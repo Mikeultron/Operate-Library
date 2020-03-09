@@ -57,8 +57,7 @@ namespace Operate
             {
                 return 1;
             }
-            int num;
-            num = n;
+            int num = n;
             for(int i = n - 1; i > 0; i--)
             {
                 num = num * i;
@@ -151,7 +150,7 @@ namespace Operate
         {
             /**
                 * Returns a new string which all the characters are reversed.
-                * This function takes parameter string s.
+                * 
                 * This function will reverse the given string.
                 */
             public static string Reverse(this string s)
