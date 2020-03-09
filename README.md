@@ -1,6 +1,6 @@
 # Operate-Library
 Operate Library is an open source library project for all C# developers.
-Anyone can use this librart for free.
+Anyone can use this library for free.
 Anyone can donate some code to improve this library.
 
 # Steps
