@@ -14,4 +14,4 @@ Anyone can donate some code to improve this library.
 - using static Operate.Count;
 - using static Operate.StringHelper.Strings;
 
-- Mikeul 2020 -
+*Mikeul 2020
