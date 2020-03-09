@@ -1,0 +1,16 @@
+D:\C#\lib\libs\bin\Debug\netstandard2.0\libs.deps.json
+D:\C#\lib\libs\bin\Debug\netstandard2.0\libs.dll
+D:\C#\lib\libs\bin\Debug\netstandard2.0\libs.pdb
+D:\C#\lib\libs\obj\Debug\netstandard2.0\libs.csprojAssemblyReference.cache
+D:\C#\lib\libs\obj\Debug\netstandard2.0\libs.AssemblyInfoInputs.cache
+D:\C#\lib\libs\obj\Debug\netstandard2.0\libs.AssemblyInfo.cs
+D:\C#\lib\libs\obj\Debug\netstandard2.0\libs.dll
+D:\C#\lib\libs\obj\Debug\netstandard2.0\libs.pdb
+D:\C#\rand\libs\bin\Debug\netstandard2.0\libs.deps.json
+D:\C#\rand\libs\bin\Debug\netstandard2.0\libs.dll
+D:\C#\rand\libs\bin\Debug\netstandard2.0\libs.pdb
+D:\C#\rand\libs\obj\Debug\netstandard2.0\libs.csprojAssemblyReference.cache
+D:\C#\rand\libs\obj\Debug\netstandard2.0\libs.AssemblyInfoInputs.cache
+D:\C#\rand\libs\obj\Debug\netstandard2.0\libs.AssemblyInfo.cs
+D:\C#\rand\libs\obj\Debug\netstandard2.0\libs.dll
+D:\C#\rand\libs\obj\Debug\netstandard2.0\libs.pdb
