@@ -63,31 +63,7 @@ namespace Operate
                 num = num * i;
             }
             return num;
-        }
-        /**
-            * Check if this int is greater than the comparer.
-            * Returns boolean value.
-            */
-        public static bool IsGreater(this int n, int Comparer)
-        {
-            if(n > Comparer)
-            {
-                return true;
-            }            
-            return false;
-        }
-        /**
-            * Check if this int is less than the comparer.
-            * Returns boolean value.
-            */
-        public static bool IsLess(this int n, int m)
-        {
-            if(n < m)
-            {
-                return true;
-            }
-            return false;
-        }
+        }    
         /**
             * Check if this integer is a prime number or not.
             * Returns true if it is a prime number, and false if it is not a prime number.
